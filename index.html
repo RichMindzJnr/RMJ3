@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Israel Temiloluwa Joseph — Graphic Designer</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <svg class="avatar" viewBox="0 0 200 200" aria-label="ITJ monogram">
+    <defs>
+      <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#4f46e5"/>
+        <stop offset="100%" stop-color="#9333ea"/>
+      </linearGradient>
+    </defs>
+    <circle cx="100" cy="100" r="95" fill="url(#g1)"/>
+    <text x="100" y="128" text-anchor="middle"
+          font-family="Georgia, serif" font-size="72"
+          fill="#fff" font-weight="bold">ITJ</text>
+  </svg>
+  <h1>Israel Temiloluwa Joseph</h1>
+  <p class="role">Graphic Designer</p>
+  <p class="tagline">Bold ideas, elegant designs.</p>
+  <a class="btn" href="mailto:israeltemiloluwa0@gmail.com">Hire me</a>
+</header>
+
+<section id="work">
+  <h2>Selected Work</h2>
+  <div class="grid">
+
+    <!-- Project 1: Logo -->
+    <article class="project">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Logo design">
+        <rect width="400" height="300" fill="#0f172a"/>
+        <circle cx="200" cy="150" r="70" fill="none" stroke="#facc15" stroke-width="8"/>
+        <path d="M160 150 L200 110 L240 150 L200 190 Z" fill="#facc15"/>
+      </svg>
+      <h3>Geometric Logo Mark</h3>
+      <p><strong>Brief:</strong> Minimal mark for a modern brand.</p>
+      <p><strong>Concept:</strong> Balance and symmetry using basic geometry.</p>
+      <p><strong>Tools:</strong> Hand-coded SVG</p>
+    </article>
+
+    <!-- Project 2: Poster -->
+    <article class="project">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Poster design">
+        <rect width="400" height="300" fill="#111827"/>
+        <rect x="30" y="30" width="340" height="240" fill="none" stroke="#f472b6" stroke-width="4"/>
+        <text x="200" y="150" text-anchor="middle" fill="#f472b6"
+              font-family="Georgia, serif" font-size="48" font-weight="bold">BOLD</text>
+        <text x="200" y="200" text-anchor="middle" fill="#f9fafb"
+              font-family="Helvetica, sans-serif" font-size="20" letter-spacing="6">IDEAS</text>
+      </svg>
+      <h3>Typography Poster</h3>
+      <p><strong>Brief:</strong> Poster exploring bold type and contrast.</p>
+      <p><strong>Concept:</strong> Serif + sans pairing on dark canvas.</p>
+      <p><strong>Tools:</strong> Hand-coded SVG</p>
+    </article>
+
+    <!-- Project 3: Social Post -->
+    <article class="project">
+      <svg viewBox="0 0 400 300" role="img" aria-label="Social media post">
+        <defs>
+          <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#06b6d4"/>
+            <stop offset="100%" stop-color="#8b5cf6"/>
+          </linearGradient>
+        </defs>
+        <rect width="400" height="300" fill="url(#g2)"/>
+        <text x="200" y="140" text-anchor="middle" fill="#fff"
+              font-family="Helvetica, sans-serif" font-size="34" font-weight="bold">ELEGANT</text>
+        <text x="200" y="185" text-anchor="middle" fill="#f0f9ff"
+              font-family="Helvetica, sans-serif" font-size="18" letter-spacing="4">DESIGN</text>
+      </svg>
+      <h3>Social Media Post</h3>
+      <p><strong>Brief:</strong> Promo post with strong visual hierarchy.</p>
+      <p><strong>Concept:</strong> Gradient backdrop, clean centered type.</p>
+      <p><strong>Tools:</strong> Hand-coded SVG</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I’m Israel Temiloluwa Joseph, a graphic designer focused on bold ideas
+    and elegant execution. I create logos, posters, and digital visuals that
+    communicate clearly and look sharp.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>Logo Design</li>
+    <li>Typography</li>
+    <li>Poster Design</li>
+    <li>Social Media Graphics</li>
+    <li>Brand Identity</li>
+    <li>SVG / Vector Design</li>
+    <li>Figma</li>
+    <li>Adobe Illustrator</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:israeltemiloluwa0@gmail.com">israeltemiloluwa0@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/RichMindzJnr">github.com/RichMindzJnr</a></p>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Israel Temiloluwa Joseph</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+          </html>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #0b0f19;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+a { color: #a78bfa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: radial-gradient(circle at 50% 0%, #1e1b4b, #0b0f19 70%);
+}
+
+.avatar { width: 140px; height: 140px; }
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.role {
+  color: #a78bfa;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+.tagline {
+  margin-top: 16px;
+  font-size: 1.15rem;
+  color: #cbd5e1;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 26px;
+  padding: 12px 28px;
+  background: #7c3aed;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn:hover { background: #6d28d9; text-decoration: none; }
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 24px;
+  border-left: 4px solid #7c3aed;
+  padding-left: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.project {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.project:hover {
+  transform: translateY(-4px);
+  border-color: #7c3aed;
+}
+
+.project svg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.project h3 {
+  margin-top: 14px;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.project p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 6px;
+}
+.project p strong { color: #cbd5e1; }
+
+.skills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills li {
+  background: #1e1b4b;
+  color: #c4b5fd;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-size: 0.85rem;
+  border-top: 1px solid #1f2937;
+}
